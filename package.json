@@ -1,0 +1,17 @@
+{
+  "name": "ORCA2BYOD",
+  "type": "module",
+  "packageManager": "yarn@3.2.4",
+  "dependencies": {
+    "command-line-args": "^5.2.1",
+    "mqtt": "^4.3.7",
+    "osc": "^2.4.4",
+    "webmidi": "^3.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "scripts": {
+    "dev": "nodemon -x 'node index.js -b mqtt://localhost:1883 -t byod/taxi'"
+  }
+}
